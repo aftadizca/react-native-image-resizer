@@ -142,12 +142,12 @@ public class ImageResizer {
             float width = image.getWidth();
             float height = image.getHeight();
 
-            float ratio = Math.min((float)maxWidth / width, (float)maxHeight / height);
+            //float ratio = Math.min((float)maxWidth / width, (float)maxHeight / height);
 
-            int finalWidth = (int) (width * ratio);
-            int finalHeight = (int) (height * ratio);
+            //int finalWidth = (int) (width * ratio);
+            //int finalHeight = (int) (height * ratio);
             try {
-                newImage = Bitmap.createScaledBitmap(image, finalWidth, finalHeight, true);
+                newImage = Bitmap.createScaledBitmap(image, maxWidth, maxHeight, true);
             } catch (OutOfMemoryError e) {
                 return null;
             }
