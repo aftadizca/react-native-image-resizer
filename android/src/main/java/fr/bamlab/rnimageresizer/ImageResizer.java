@@ -139,8 +139,8 @@ public class ImageResizer {
         }
 
         if (maxHeight > 0 && maxWidth > 0) {
-            float width = image.getWidth();
-            float height = image.getHeight();
+            //float width = image.getWidth();
+            //float height = image.getHeight();
 
             //float ratio = Math.min((float)maxWidth / width, (float)maxHeight / height);
 
